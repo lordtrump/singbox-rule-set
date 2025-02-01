@@ -15,8 +15,8 @@ tar -xzvf sing-box.tar.gz
 mv ./sing-box-${VERSION}-linux-amd64/sing-box .
 chmod +x sing-box
 
-geoipAddresses=("cn" "de" "facebook" "google" "netflix" "telegram" "twitter")
-geositeDomains=("amazon" "rule-umum" "rule-indo" "apple" "bilibili" "category-ads-all" "category-games" "cn" "discord" "disney" "facebook" "geolocation-!cn" "github" "google" "instagram" "microsoft" "netflix" "onedrive" "openai" "primevideo" "telegram" "tiktok" "tld-!cn" "twitch" "hbo" "twitter" "youtube" "threads" "nvidia" "spotify")
+geoipAddresses=("cloudflare" "cloudfront" "geoid" "firewall" "malicious" "facebook" "google" "netflix" "telegram" "twitter")
+geositeDomains=("oisd-full" "oisd-nsfw" "rule-ads" "rule-doh" "rule-gaming" "rule-indo" "rule-playstore" "rule-sosmed" "rule-streaming" "rule-umum" "rule-ipcheck" "videoconference" "rule-malicious")
 
 for item in "${geoipAddresses[@]}"; do
     ./sing-box geoip export "$item"
